@@ -101,7 +101,7 @@ namespace NordicSpaceLink.IIO
         /// <summary>
         /// Create a context from a URI description
         /// </summary>
-        /// <param name="uri">A URI describing the context location. Refer to <see cref="iio_create_context_from_uri"/> for documentation for syntax.</param>
+        /// <param name="uri">A URI describing the context location. Refer to "iio_create_context_from_uri" for documentation for syntax.</param>
         public static Context FromURI(string uri) => new(NativeMethods.iio_create_context_from_uri(uri));
 
         protected override void DoDispose()
